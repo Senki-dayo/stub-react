@@ -1,9 +1,10 @@
 import "./styles.css";
-import Stub from "./Stub";
+import React from "react";
+import StubData from "./StubData";
 
-export default function App() {
+export default function StubView() {
   // スタブコンポーネントからデータセットを取得
-  const dataSets = Stub();
+  const dataSets = StubData();
 
   // データセットをタグの形に整形
   const dataSetElements = dataSets.map((dataSet, index) => (
@@ -15,7 +16,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>アプリケーション</h1>
+      <h2>Stubから取得した情報の一覧表示</h2>
       {dataSetElements}
     </div>
   );

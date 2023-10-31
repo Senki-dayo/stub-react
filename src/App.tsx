@@ -1,4 +1,4 @@
-// import React from "react";
+import "./styles.css";
 import Stub from "./Stub";
 
 export default function App() {
@@ -14,7 +14,7 @@ export default function App() {
   ));
 
   return (
-    <div>
+    <div className="App">
       <h1>アプリケーション</h1>
       {dataSetElements}
     </div>

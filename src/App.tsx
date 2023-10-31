@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 import Stub from "./Stub";
 
-const App = () => {
+export default function App() {
   // スタブコンポーネントからデータセットを取得
   const dataSets = Stub();
 
@@ -19,6 +19,4 @@ const App = () => {
       {dataSetElements}
     </div>
   );
-};
-
-export default App;
+}

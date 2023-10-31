@@ -1,10 +1,24 @@
-import "./styles.css";
+import React from "react";
+import Stub from "./Stub";
 
-export default function App() {
+const App = () => {
+  // スタブコンポーネントからデータセットを取得
+  const dataSets = Stub();
+
+  // データセットをタグの形に整形
+  const dataSetElements = dataSets.map((dataSet, index) => (
+    <div key={index}>
+      <h1>{dataSet.title}</h1>
+      <p>{dataSet.content}</p>
+    </div>
+  ));
+
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div>
+      <h1>アプリケーション</h1>
+      {dataSetElements}
     </div>
   );
-}
+};
+
+export default App;

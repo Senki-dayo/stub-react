@@ -7,6 +7,8 @@ const root = ReactDOM.createRoot(rootElement);
 
 root.render(
   <React.StrictMode>
+    <p>stubの読み込みを行うReactコンポーネント</p>
+    <p>動作テスト</p>
     <App />
   </React.StrictMode>,
 );
